@@ -1,9 +1,9 @@
 import cv2 as cv
 import numpy as np
 
-main_img = cv.imread('tyler.jpg', cv.IMREAD_REDUCED_COLOR_2)
+main_img = cv.imread('photo.jpg', cv.IMREAD_REDUCED_COLOR_2)
 
-obj_img = cv.imread('tyler2.png', cv.IMREAD_REDUCED_COLOR_2)
+obj_img = cv.imread('object.png', cv.IMREAD_REDUCED_COLOR_2)
 
 result = cv.matchTemplate(main_img, obj_img, cv.TM_CCOEFF_NORMED)
 
